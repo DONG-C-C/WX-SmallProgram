@@ -1,0 +1,53 @@
+        <view class="_view 1b5eef0b uni-list">
+          <view class="_view 1b5eef0b uni-list-cell">
+            <view class="_view 1b5eef0b uni-list-cell-left">
+              <view class="_view 1b5eef0b uni-label">图片来源</view>
+            </view>
+            <view class="_view 1b5eef0b uni-list-cell-right">
+              <picker range="{{sourceType1}}" bindchange="bindPickerChange1" value="{{sourceTypeIndex}}" mode="selector"  class="_picker 1b5eef0b">
+                <view class="_view 1b5eef0b uni-input">{{sourceType1[sourceTypeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="_view 1b5eef0b uni-list-cell">
+            <view class="_view 1b5eef0b uni-list-cell-left">
+              <view class="_view 1b5eef0b uni-label">图片质量</view>
+            </view>
+            <view class="_view 1b5eef0b uni-list-cell-right">
+              <picker range="{{sizeType1}}" bindchange="bindPickerChange2" value="{{sizeTypeIndex}}" mode="selector" data-eventid="{{'1b5eef0b-1'}}" data-comkey="{{$k}}" class="_picker 1b5eef0b">
+                <view class="_view 1b5eef0b uni-input">{{sizeType1[sizeTypeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+          <view class="_view 1b5eef0b uni-list-cell">
+            <view class="_view 1b5eef0b uni-list-cell-left">
+              <view class="_view 1b5eef0b uni-label">数量限制</view>
+            </view>
+            <view class="_view 1b5eef0b uni-list-cell-right">
+              <picker range="{{count1}}" bindchange="bindPickerChange3" mode="selector" data-eventid="{{'1b5eef0b-2'}}" data-comkey="{{$k}}" class="_picker 1b5eef0b">
+                <view class="_view 1b5eef0b uni-input">{{count1[countIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+        </view>
+<view class="_view 1b5eef0b uni-list list-pd">
+  <view class="_view 1b5eef0b uni-uploader-head">
+    <view class="_view 1b5eef0b uni-uploader-title">点击可预览选好的图片</view>
+    <view class="_view 1b5eef0b uni-uploader-info">{{imgs.length}}/{{count1[countIndex]}}</view>
+  </view>
+  <view class="gallery">
+
+        <view class="item" wx:for="{{imgs}}" wx:key="">
+          <image src="{{item}}" data-src="{{item}}" bindtap="previewImage" mode="aspectFill" />
+          <!-- 删除按钮 -->
+          <view class="delete" bindtap="deleteImage" data-index="{{index}}">X</view>
+        </view>
+        <!-- <view class="item" bindtap="chooseImg">
+      <view class='_view 1b5eef0b uni-uploader__input-box'></view>
+    </view> -->
+        <view class="_view 1b5eef0b uni-uploader__input-box">
+          <view class="_view 1b5eef0b uni-uploader__input" bindtap="chooseImg"></view>
+        </view>
+  </view>
+</view>
+<button type="primary" bindtap="submit">上传图片</button>

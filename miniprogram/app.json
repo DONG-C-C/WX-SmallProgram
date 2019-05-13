@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/member/index",
+
+    "pages/picture/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "图片上传",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#AAAAAA",
+    "selectedColor": "FF0000",
+    "backgroundColor": "#EEEEEE",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-selected.png"
+      },
+      {
+        "pagePath": "pages/member/index",
+        "text": "个人中心",
+        "iconPath": "images/member.png",
+        "selectedIconPath": "images/member-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

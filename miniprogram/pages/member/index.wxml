@@ -1,0 +1,32 @@
+<!--pages/member/index.wxml-->
+
+<!--<open-data type="groupName" open-gid="xxxxxx"></open-data>-->
+<view>
+  <view class='header'>
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl" bindgetuserinfo="onGotUserInfo"></open-data>
+    </view>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+  </view>
+</view>
+
+
+
+<!-- <view class="my-group mt-20 bg-fff" bindtap="showGroupIndex">
+  <view class="icon">
+    <image src="/images/group1.png"></image>
+  </view>
+  管理图片
+  <image src='/images/left-b.png' class="pull-right"></image>
+</view>
+ -->
+
+
+<navigator class="collect bg-fff" url="/pages/picture/index">
+  <view class="icon">
+    <image src="/images/group1.png"></image>
+  </view>
+  管理图片
+  <!-- <text class='pull-right'>></text>	 -->
+  <image src='/images/left-b.png' class="pull-right"></image>
+</navigator>

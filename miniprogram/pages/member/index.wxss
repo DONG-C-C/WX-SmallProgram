@@ -1,0 +1,122 @@
+/* pages/member/index.wxss */
+
+.header {
+  background-color: rgba(210, 245, 233, 0.986);
+  position: relative;
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  height: 320rpx;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  font-family: "黑体";
+  font-weight: 700;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+  border: 0px solid palegreen;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userName {
+  color: #fff;
+  margin-top: 24rpx;
+  font-size: 28rpx;
+}
+
+.my-order, .collect, .my-group {
+  line-height: 88rpx;
+  padding: 0 24rpx;
+  font-size: 30rpx;
+}
+
+.my-order>view {
+  font-size: 24rpx;
+  color: #5d5d5d;
+}
+
+.my-order image {
+  height: 24rpx;
+  width: 12rpx;
+  margin-left: 16rpx;
+}
+
+.orderInfo {
+  padding-top: 30rpx;
+  padding-bottom: 16rpx;
+  margin-top: 1px;
+}
+
+.orderInfo>view {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+.orders-status {
+  margin-top: 24rpx;
+  font-size: 24rpx;
+}
+
+.orderInfo image {
+  width: 44rpx;
+  height: 38rpx;
+}
+
+.orderInfo .notice {
+  position: relative;
+  top: -16rpx;
+  right: -65rpx;
+  height: 32rpx;
+  width: 32rpx;
+  border-radius: 50%;
+  border: 1px solid #fe0000;
+  color: #fe0000;
+  display: inline-block;
+  line-height: 32rpx;
+  background-color: #fff;
+}
+
+.orderInfo .notice-1 {
+  position: relative;
+  top: -16rpx;
+  right: -74rpx;
+  border: 1px solid #fe0000;
+  color: #fe0000;
+  display: inline-block;
+  height: 32rpx;
+  line-height: 32rpx;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20rpx;
+  padding: 0 12rpx; /*width: 50rpx;*/
+}
+
+.collect {
+  margin-top: 1px;
+}
+
+.my-group image.pull-right, .collect image.pull-right {
+  height: 24rpx;
+  width: 12rpx;
+  margin-top: 30rpx;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 24rpx;
+}
+
+.icon image {
+  width: 40rpx;
+  height: 40rpx;
+}
